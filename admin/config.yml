@@ -15,6 +15,10 @@ collections:
         label: "Dịch vụ và dự án"
         file: "content/site.json"
         fields:
+          - label: "Logo SIMBA STUDIO"
+            name: "logo"
+            widget: "image"
+            required: false
           - label: "Dịch vụ"
             name: "services"
             widget: "list"
