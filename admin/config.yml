@@ -1,0 +1,36 @@
+backend:
+  name: github
+  repo: sanxuathomohinh3d/simba-studio
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "assets/uploads"
+locale: "vi"
+site_url: "https://melodious-capybara-0c5814.netlify.app"
+
+collections:
+  - name: "site"
+    label: "Nội dung website"
+    files:
+      - name: "site_content"
+        label: "Dịch vụ và dự án"
+        file: "content/site.json"
+        fields:
+          - label: "Dịch vụ"
+            name: "services"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "Biểu tượng (emoji/ký tự)", name: "icon", widget: "string", required: false}
+              - {label: "Tên dịch vụ", name: "title", widget: "string"}
+              - {label: "Mô tả", name: "description", widget: "text"}
+          - label: "Dự án / sản phẩm"
+            name: "projects"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "Tên dự án", name: "title", widget: "string"}
+              - {label: "Nhóm dự án", name: "category", widget: "select", options: [{label: "Robot & Sự kiện", value: "robot"}, {label: "Mô hình trưng bày", value: "model"}, {label: "Mascot", value: "mascot"}, {label: "Sản phẩm 3D", value: "3d"}, {label: "Nội thất & Decor", value: "decor"}]}
+              - {label: "Dòng chữ nhỏ", name: "label", widget: "string", required: false}
+              - {label: "Biểu tượng nếu chưa có ảnh", name: "icon", widget: "string", required: false}
+              - {label: "Ảnh dự án", name: "image", widget: "image", required: false}

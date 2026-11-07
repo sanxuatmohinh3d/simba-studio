@@ -1,0 +1,66 @@
+{
+  "services": [
+    {
+      "icon": "◇",
+      "title": "Thiết kế & Dựng mô hình 3D",
+      "description": "Ý tưởng, concept, 3D model sản phẩm & nhân vật."
+    },
+    {
+      "icon": "▱",
+      "title": "Gia công Composite / FRP",
+      "description": "Tượng, mascot, mô hình trưng bày, ngoại thất."
+    },
+    {
+      "icon": "⬡",
+      "title": "Mô hình Foam EPS / Mút xốp 3D",
+      "description": "Tạo hình lớn, trang trí sự kiện, backdrop, concept."
+    },
+    {
+      "icon": "♙",
+      "title": "Robot & Đạo cụ sự kiện",
+      "description": "Thiết kế, sản xuất & cho thuê robot, cosplay, đạo cụ sân khấu."
+    },
+    {
+      "icon": "⚙",
+      "title": "Sản phẩm sáng tạo & Tùy chỉnh",
+      "description": "Nội thất, decor, sản phẩm 3D in ấn và gia công theo yêu cầu."
+    }
+  ],
+  "projects": [
+    {
+      "category": "robot",
+      "icon": "🤖",
+      "label": "ROBOT / PROP",
+      "title": "Robot cơ khí tương lai",
+      "image": ""
+    },
+    {
+      "category": "model",
+      "icon": "🧑‍🚀",
+      "label": "DISPLAY MODEL",
+      "title": "Mô hình phi hành gia",
+      "image": ""
+    },
+    {
+      "category": "mascot",
+      "icon": "🐉",
+      "label": "MASCOT / SCULPT",
+      "title": "Rồng & nhân vật",
+      "image": ""
+    },
+    {
+      "category": "robot",
+      "icon": "🚀",
+      "label": "EVENT / SPACE",
+      "title": "Phi thuyền trưng bày",
+      "image": ""
+    },
+    {
+      "category": "3d",
+      "icon": "🐱",
+      "label": "3D PRINT / CUSTOM",
+      "title": "Tượng mini cá nhân hóa",
+      "image": ""
+    }
+  ]
+}

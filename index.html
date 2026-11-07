@@ -30,21 +30,35 @@ header{position:sticky;top:0;z-index:10;background:#03090ee8;backdrop-filter:blu
 <div class="hero-copy"><div class="eyebrow">DESIGN　×　FABRICATION　×　PROPS</div><h1>SIMBA<br><span>STUDIO</span></h1><div class="accent-line"></div><p>Thiết kế – Mô hình hoá – Sản xuất<br>Từ ý tưởng đến hiện thực.</p><div class="hero-actions"><a class="btn" href="#contact">↗ Yêu cầu báo giá</a><a class="btn secondary" href="#projects">▷ Xem dự án</a></div></div>
 <div class="hero-art"><div class="planet"></div><div class="orbital"></div><div class="hud top">SYSTEM STATUS<strong>● ONLINE / SIMBA-01</strong></div><div class="hud bottom">DESIGN & FABRICATION<strong>3D · COMPOSITE · EPS</strong></div><div class="mech"><div class="head"></div><div class="arm left"></div><div class="arm right"></div><div class="torso"></div><div class="leg left"></div><div class="leg right"></div><div class="foot left"></div><div class="foot right"></div></div></div>
 </div>
-<section class="container section" id="services"><h2 class="section-title">DỊCH VỤ CỦA CHÚNG TÔI</h2><div class="service-grid">
-<div class="service"><div class="service-head"><div class="iconbox">◇</div><h3>Thiết kế & Dựng mô hình 3D</h3></div><p>Ý tưởng, concept, 3D model sản phẩm & nhân vật.</p></div>
-<div class="service"><div class="service-head"><div class="iconbox">▱</div><h3>Gia công Composite / FRP</h3></div><p>Tượng, mascot, mô hình trưng bày, ngoại thất.</p></div>
-<div class="service"><div class="service-head"><div class="iconbox">⬡</div><h3>Mô hình Foam EPS / Mút xốp 3D</h3></div><p>Tạo hình lớn, trang trí sự kiện, backdrop, concept.</p></div>
-<div class="service"><div class="service-head"><div class="iconbox">♙</div><h3>Robot & Đạo cụ sự kiện</h3></div><p>Thiết kế, sản xuất & cho thuê robot, cosplay, đạo cụ sân khấu.</p></div>
-<div class="service"><div class="service-head"><div class="iconbox">⚙</div><h3>Sản phẩm sáng tạo & Tùy chỉnh</h3></div><p>Nội thất, decor, sản phẩm 3D in ấn và gia công theo yêu cầu.</p></div>
-</div></section>
+<section class="container section" id="services"><h2 class="section-title">DỊCH VỤ CỦA CHÚNG TÔI</h2><div class="service-grid" id="serviceGrid"></div></section>
 <section class="container section" id="projects"><h2 class="section-title">DỰ ÁN NỔI BẬT</h2><div class="filters"><button class="filter active" data-filter="all">Tất cả</button><button class="filter" data-filter="robot">Robot & Sự kiện</button><button class="filter" data-filter="model">Mô hình trưng bày</button><button class="filter" data-filter="mascot">Mascot</button><button class="filter" data-filter="3d">Sản phẩm 3D</button><button class="filter" data-filter="decor">Nội thất & Decor</button></div>
-<div class="project-grid"><div class="project" data-category="robot"><div class="art">🤖</div><div class="caption"><small>ROBOT / PROP</small>Robot cơ khí tương lai</div></div><div class="project" data-category="model"><div class="art">🧑‍🚀</div><div class="caption"><small>DISPLAY MODEL</small>Mô hình phi hành gia</div></div><div class="project" data-category="mascot"><div class="art">🐉</div><div class="caption"><small>MASCOT / SCULPT</small>Rồng & nhân vật</div></div><div class="project" data-category="robot"><div class="art">🚀</div><div class="caption"><small>EVENT / SPACE</small>Phi thuyền trưng bày</div></div><div class="project" data-category="3d"><div class="art">🐱</div><div class="caption"><small>3D PRINT / CUSTOM</small>Tượng mini cá nhân hóa</div></div></div>
+<div class="project-grid" id="projectGrid"></div>
 </section>
 <section class="container section about-grid" id="about"><div><div class="eyebrow">ABOUT SIMBA STUDIO</div><h2>Ý TƯỞNG ĐƯỢC<br><span style="color:var(--teal)">CHẾ TÁC THÀNH HÌNH.</span></h2><p style="color:var(--muted);line-height:1.8">SIMBA STUDIO kết nối thiết kế sáng tạo với kỹ thuật chế tạo. Chúng tôi phát triển concept, dựng mô hình và phối hợp sản xuất các sản phẩm độc đáo cho thương hiệu, sự kiện và không gian.</p></div><div class="panel" id="process"><div class="step"><b>01</b> Tiếp nhận ý tưởng & yêu cầu</div><div class="step"><b>02</b> Thiết kế concept / mô hình 3D</div><div class="step"><b>03</b> Thống nhất vật liệu & báo giá</div><div class="step"><b>04</b> Chế tác, hoàn thiện & bàn giao</div></div></section>
 <section class="container section" id="contact"><div class="contact"><div><div class="eyebrow">CONTACT / START A PROJECT</div><h2>HÃY CÙNG TẠO<br>ĐIỀU KHÁC BIỆT.</h2><p>Gửi ý tưởng, hình ảnh tham khảo hoặc kích thước để SIMBA STUDIO tư vấn phương án và báo giá.</p><p><b style="color:var(--teal)">☎ 0386 835 763</b></p><a class="btn" href="https://zalo.me/0386835763" target="_blank">Chat Zalo ↗</a></div><form id="quote"><input id="clientName" placeholder="Tên cá nhân / Công ty" required><input id="clientPhone" placeholder="Số điện thoại" required><select id="clientService"><option>Chọn dịch vụ</option><option>Thiết kế 3D / mô hình</option><option>Composite / FRP</option><option>Foam EPS / mút xốp</option><option>Robot / đạo cụ sự kiện</option><option>Sản phẩm tùy chỉnh</option></select><textarea id="clientMsg" placeholder="Mô tả dự án, kích thước, số lượng..."></textarea><button class="btn" type="submit">GỬI YÊU CẦU QUA ZALO ↗</button><br><small>Thông tin sẽ được đưa vào tin nhắn Zalo.</small></form></div></section>
 </main><footer><div class="container">© SIMBA STUDIO　|　DESIGN · FABRICATION · PROPS　|　0386 835 763</div></footer>
 <div class="floatbar"><a href="https://zalo.me/0386835763" title="Zalo">Z</a><a href="tel:0386835763" title="Gọi điện">☎</a><a href="mailto:simba.studio@example.com" title="Email">✉</a></div>
 <script>
-document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;document.querySelectorAll('.project').forEach(p=>p.style.display=(f==='all'||p.dataset.category===f)?'flex':'none')}));
+let projectItems = [];
+function applyProjectFilter(filter='all'){
+ document.querySelectorAll('.filter').forEach(b=>b.classList.toggle('active',b.dataset.filter===filter));
+ document.querySelectorAll('.project').forEach(p=>p.style.display=(filter==='all'||p.dataset.category===filter)?'flex':'none');
+}
+document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>applyProjectFilter(btn.dataset.filter)));
+async function loadCmsContent(){
+ try{
+  const res=await fetch(new URL('content/site.json', document.baseURI)); if(!res.ok) throw new Error('Cannot load CMS content');
+  const data=await res.json();
+  const services=document.getElementById('serviceGrid');
+  if(services && Array.isArray(data.services)) services.innerHTML=data.services.map(s=>`<div class="service"><div class="service-head"><div class="iconbox">${s.icon||'◇'}</div><h3>${s.title||''}</h3></div><p>${s.description||''}</p></div>`).join('');
+  const grid=document.getElementById('projectGrid');
+  if(grid && Array.isArray(data.projects)){
+   projectItems=data.projects;
+   grid.innerHTML=data.projects.map(p=>`<div class="project" data-category="${p.category||'all'}">${p.image?`<img src="${p.image}" alt="${p.title||''}" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">`:`<div class="art">${p.icon||'◇'}</div>`}<div class="caption"><small>${p.label||'SIMBA STUDIO'}</small>${p.title||''}</div></div>`).join('');
+   applyProjectFilter(document.querySelector('.filter.active')?.dataset.filter||'all');
+  }
+ }catch(err){console.warn('CMS content loading issue:',err);}
+}
+loadCmsContent();
 document.getElementById('quote').addEventListener('submit',e=>{e.preventDefault();const n=document.getElementById('clientName').value,ph=document.getElementById('clientPhone').value,s=document.getElementById('clientService').value,m=document.getElementById('clientMsg').value;const text=`Xin chào SIMBA STUDIO, tôi muốn báo giá:\\nTên: ${n}\\nSĐT: ${ph}\\nDịch vụ: ${s}\\nMô tả: ${m}`;window.open('https://zalo.me/0386835763?text='+encodeURIComponent(text),'_blank')});
 </script></body></html>
