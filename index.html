@@ -5,37 +5,90 @@
 <title>SIMBA STUDIO | Design · Fabrication · Props</title>
 <meta name="description" content="SIMBA STUDIO — Thiết kế, mô hình hóa, sản xuất robot, composite, foam và đạo cụ sự kiện.">
 <style>
-:root{--bg:#03090e;--bg2:#07131a;--card:#0a1820;--teal:#18e6dc;--teal2:#00aeb8;--white:#f4fbff;--muted:#a5bac3;--line:#24e9df45}
+   .site-logo {
+    height: 45px !important;
+    width: 180px !important;
+    max-width: 180px !important;
+    object-fit: contain;
+    display: block;
+}
+:root{--bg:#071522;--bg2:#0b2940;;--card:#0a1820;--teal:#0098d4;--teal2:#00bce8;--white:#f4fbff;--muted:#a5bac3;--line:#24e9df45}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,"Segoe UI",Arial,sans-serif;overflow-x:hidden}
 body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 78% 20%,#0a687044,transparent 35%),radial-gradient(ellipse at 0% 70%,#0a445044,transparent 40%),linear-gradient(120deg,#03090e,#06121a 60%,#02070b)}
 a{color:inherit;text-decoration:none}.container{width:min(1280px,94%);margin:auto}
 header{position:sticky;top:0;z-index:10;background:#03090ee8;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
 .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.logo{display:flex;align-items:center;gap:12px;font-weight:900;font-size:25px;letter-spacing:1px}.logo-mark{width:42px;height:42px;display:grid;place-items:center;color:var(--teal);font-size:29px;border:1px solid var(--teal);clip-path:polygon(25% 0,75% 0,100% 25%,100% 75%,75% 100%,25% 100%,0 75%,0 25%);text-shadow:0 0 14px var(--teal)}.logo small{display:block;font-size:9px;letter-spacing:5px;color:var(--teal);font-weight:500}.navlinks{display:flex;gap:25px;font-size:14px;font-weight:600}.navlinks a{padding:10px 0;position:relative}.navlinks a:hover,.navlinks a.active{color:var(--teal)}.navlinks a.active:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--teal);box-shadow:0 0 12px var(--teal)}.btn{display:inline-flex;align-items:center;gap:9px;padding:12px 19px;border-radius:9px;background:var(--teal);color:#001417;font-weight:800;border:1px solid var(--teal);box-shadow:0 0 22px #18e6dc25;transition:.2s}.btn:hover{transform:translateY(-2px);box-shadow:0 0 28px #18e6dc60}.btn.secondary{background:transparent;color:var(--white);border-color:#b9d2d855;box-shadow:none}
+.cms-banner{display:none}.hero.has-banner{display:block;min-height:0;padding:0}.hero.has-banner .cms-banner{display:block;width:100%;height:auto;max-height:650px;object-fit:contain}.hero.has-banner .hero-copy,.hero.has-banner .hero-art{display:none}
 .hero{min-height:470px;display:grid;grid-template-columns:.85fr 1.15fr;align-items:center;position:relative;padding:28px 0 0;overflow:hidden}.hero-copy{position:relative;z-index:2;padding:35px 0}.eyebrow{font-size:12px;letter-spacing:5px;color:var(--teal);font-weight:700}.hero h1{font-size:clamp(45px,6vw,82px);line-height:.94;letter-spacing:-3px;margin:22px 0 15px;text-transform:uppercase}.hero h1 span{color:var(--teal);text-shadow:0 0 26px #18e6dc35}.accent-line{width:115px;height:3px;background:linear-gradient(90deg,var(--teal),transparent);margin:20px 0}.hero p{font-size:18px;line-height:1.55;color:#d7e5ea;max-width:440px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.hero-art{height:470px;position:relative;display:grid;place-items:center;isolation:isolate}.planet{position:absolute;width:390px;height:390px;border-radius:50%;right:20%;top:10%;background:radial-gradient(circle at 30% 25%,#b9ffff 0,#3b9fb7 10%,#12516f 38%,#071522 70%);box-shadow:inset -35px -30px 55px #02070b,0 0 55px #17dcd42b}.planet:after{content:"";position:absolute;inset:0;border-radius:50%;background:linear-gradient(130deg,transparent 30%,#02070b99 75%)}.orbital{position:absolute;width:540px;height:230px;border:1px solid #26e9e277;border-radius:50%;transform:rotate(-20deg);box-shadow:0 0 18px #18e6dc15}.orbital:after{content:"";position:absolute;top:10%;left:15%;width:7px;height:7px;border-radius:50%;background:var(--teal);box-shadow:0 0 18px var(--teal)}.mech{position:absolute;right:12%;bottom:0;width:min(410px,85%);height:450px;filter:drop-shadow(0 0 25px #19e6dc25);animation:float 5s ease-in-out infinite}.mech .head{position:absolute;top:35px;left:34%;width:34%;height:22%;background:linear-gradient(135deg,#d9f2f7,#526e7a 45%,#132c39);clip-path:polygon(20% 0,80% 0,100% 35%,85% 100%,15% 100%,0 35%);border:2px solid #8ffdf5}.mech .head:before{content:"";position:absolute;left:15%;right:15%;top:40%;height:18%;background:linear-gradient(90deg,#056b79,#9ffff7,#056b79);box-shadow:0 0 20px var(--teal)}.mech .head:after{content:"";position:absolute;top:-12%;left:45%;height:25%;width:10%;background:var(--teal);clip-path:polygon(50% 0,100% 100%,0 100%)}.mech .torso{position:absolute;top:28%;left:20%;width:60%;height:37%;background:linear-gradient(145deg,#e6f6f8,#5b7d8a 35%,#0c2634 70%);clip-path:polygon(18% 0,82% 0,100% 20%,85% 100%,15% 100%,0 20%);border:2px solid #8ffdf5}.mech .torso:after{content:"SIMBA";position:absolute;top:40%;left:0;right:0;text-align:center;color:#08202a;font-weight:900;font-size:24px;letter-spacing:3px}.mech .arm{position:absolute;top:31%;width:20%;height:42%;background:linear-gradient(90deg,#112c38,#b5d6df,#193442);clip-path:polygon(20% 0,100% 10%,80% 100%,0 90%)}.mech .arm.left{left:4%;transform:rotate(8deg)}.mech .arm.right{right:4%;transform:rotate(-8deg)}.mech .leg{position:absolute;top:63%;height:29%;width:23%;background:linear-gradient(90deg,#0d2633,#b3d4dc,#152d39);clip-path:polygon(15% 0,85% 0,100% 100%,0 100%)}.mech .leg.left{left:27%}.mech .leg.right{right:27%}.mech .foot{position:absolute;bottom:0;width:28%;height:8%;background:#132b38;border:1px solid var(--teal);border-radius:5px}.mech .foot.left{left:20%}.mech .foot.right{right:20%}.hud{position:absolute;z-index:3;background:#06131adf;border:1px solid var(--line);border-radius:8px;padding:11px 14px;font-size:10px;letter-spacing:1px;color:var(--muted)}.hud strong{display:block;color:var(--teal);margin-top:5px}.hud.top{top:30px;right:0}.hud.bottom{bottom:30px;left:2%}
 .section{padding:26px 0 40px}.section-title{display:flex;align-items:center;gap:12px;font-size:24px;font-weight:850;margin:10px 0 18px}.section-title:before{content:"";width:5px;height:25px;background:var(--teal);transform:skew(-20deg);box-shadow:0 0 14px var(--teal)}.service-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.service{background:linear-gradient(145deg,#0c1b24e8,#050b10);border:1px solid #9de9e52b;border-radius:13px;padding:18px;min-height:160px;transition:.25s}.service:hover{border-color:var(--teal);transform:translateY(-4px);box-shadow:0 0 25px #18e6dc15}.service-head{display:flex;align-items:center;gap:12px;margin-bottom:12px}.iconbox{width:48px;height:48px;flex-shrink:0;display:grid;place-items:center;border:1px solid var(--teal);border-radius:12px;color:var(--teal);font-size:25px;box-shadow:inset 0 0 14px #18e6dc15,0 0 12px #18e6dc10}.service h3{font-size:14px;line-height:1.4;margin:0}.service p{font-size:12px;line-height:1.6;color:var(--muted);margin:0}
 .filters{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:18px}.filter{border:1px solid #9de9e52b;color:#d9e9ed;background:#07131a;padding:9px 15px;border-radius:9px;cursor:pointer;font-size:12px}.filter.active,.filter:hover{background:var(--teal);color:#001416;border-color:var(--teal)}.project-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.project{position:relative;min-height:210px;border:1px solid #a8e8e84d;border-radius:12px;overflow:hidden;background:linear-gradient(145deg,#0e2b37,#02080d);display:flex;align-items:center;justify-content:center;isolation:isolate}.project:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 25%,#18e6dc28,transparent 55%),linear-gradient(0deg,#02070de8,transparent 70%);z-index:-1}.project .art{font-size:80px;color:#c4f9ff;text-shadow:0 0 28px #18e6dc66;transition:.3s}.project:hover .art{transform:scale(1.12)}.project .caption{position:absolute;bottom:0;left:0;right:0;padding:13px;font-size:13px;font-weight:700;background:linear-gradient(transparent,#02070de8)}.project .caption small{display:block;color:var(--teal);font-size:9px;letter-spacing:2px;margin-bottom:5px}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.panel{border:1px solid var(--line);border-radius:14px;background:#08151b;padding:25px}.panel p{color:var(--muted);line-height:1.7}.step{border-bottom:1px solid #18e6dc20;padding:10px 0}.step:last-child{border:0}.step b{color:var(--teal);margin-right:10px}
 .contact{display:grid;grid-template-columns:1fr 1fr;gap:24px;background:linear-gradient(130deg,#0a1b22,#061015);border:1px solid var(--line);border-radius:15px;padding:28px}.contact p{color:var(--muted);line-height:1.7}.contact input,.contact select,.contact textarea{width:100%;padding:13px;margin-bottom:10px;border-radius:7px;border:1px solid #1c5a60;background:#03090e;color:white;font:inherit}.contact textarea{height:100px}.contact small{color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:12px}.floatbar{position:fixed;right:15px;bottom:20px;z-index:20;display:grid;gap:9px}.floatbar a{width:45px;height:45px;border-radius:50%;display:grid;place-items:center;background:#07151d;border:1px solid var(--teal);color:var(--teal);box-shadow:0 0 15px #18e6dc22;font-size:18px}
 @keyframes float{50%{transform:translateY(-10px)}}@media(max-width:950px){.navlinks{gap:12px}.hero{grid-template-columns:1fr 1fr}.service-grid,.project-grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:680px){.nav{height:65px}.navlinks{display:none}.logo{font-size:20px}.hero{grid-template-columns:1fr;padding-top:20px}.hero-copy{text-align:center;padding:25px 0 0}.hero h1{letter-spacing:-1px}.hero p{margin:auto}.accent-line{margin:18px auto}.hero-actions{justify-content:center}.hero-art{height:350px;margin-top:-15px}.planet{width:270px;height:270px;right:15%;top:10%}.orbital{width:340px;height:150px}.mech{height:340px;width:300px;right:10%}.hud.top{right:0;top:10px}.hud.bottom{bottom:10px}.service-grid,.project-grid{grid-template-columns:repeat(2,1fr)}.project{min-height:170px}.project .art{font-size:60px}.about-grid,.contact{grid-template-columns:1fr}.section{padding:20px 0 30px}.section-title{font-size:20px}}@media(max-width:380px){.service-grid,.project-grid{grid-template-columns:1fr}}
+.service{
+  background:linear-gradient(145deg,#09243a,#061522)!important;
+  border:1px solid #0098d4!important;
+}
+.service:hover{
+  border-color:#00bce8!important;
+  box-shadow:0 0 20px #0098d455!important;
+}
+.iconbox{
+  border-color:#0098d4!important;
+  color:#0098d4!important;
+  box-shadow:inset 0 0 14px #0098d422,0 0 12px #0098d422!important;
+/* Đồng bộ màu xanh logo SIMBA */
+:root{
+  --bg:#061522;
+  --bg2:#071c2b;
+  --teal:#0098d4;
+  --teal2:#00bce8;
+}
 
-.service{cursor:pointer}.service:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
-.service-modal{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:20px;background:#000b;backdrop-filter:blur(8px)}.service-modal.open{display:flex}.service-modal-box{position:relative;width:min(760px,100%);max-height:85vh;overflow:auto;background:linear-gradient(145deg,#0c1b24,#03090e);border:1px solid var(--teal);border-radius:16px;padding:28px;box-shadow:0 0 45px #18e6dc25}.service-modal-box h2{margin:0 40px 14px 0;color:var(--teal);font-size:clamp(24px,4vw,34px)}.service-modal-box p{color:var(--muted);line-height:1.8}.service-modal-box h3{margin:22px 0 8px}.service-modal-box ul{color:#d9e9ed;line-height:1.8;padding-left:22px}.service-modal-close{position:absolute;right:16px;top:12px;border:1px solid var(--line);background:#07131a;color:white;border-radius:8px;padding:8px 12px;cursor:pointer;font-size:18px}.service-modal-cta{margin-top:18px}
-</style>
+/* Nền toàn website */
+body{
+  background:linear-gradient(135deg,#061522,#020a12 60%,#071c2b)!important;
+}
+
+/* Các đường viền và điểm nhấn */
+.section-title:before{
+  background:#0098d4!important;
+}
+
+/* Nút và hiệu ứng hover */
+.btn:hover{
+  box-shadow:0 0 18px #0098d455!important;
+}
+
+/* Các thẻ dự án */
+.project{
+  border-color:#007eb8!important;
+  background:linear-gradient(145deg,#071c2b,#061522)!important;
+}
+
+/* Các bộ lọc dự án */
+.filter{
+  border-color:#007eb8!important;
+}
+
+.filter.active{
+  background:#0098d4!important;
+  color:#ffffff!important;
+}</style>
 </head>
 <body>
 <header><div class="container nav">
-<a class="logo" href="#home"><span class="logo-mark">⬡</span><span>SIMBA<small>STUDIO</small></span></a>
+<a class="logo" href="#home"><img src="assets/uploads/simba-logo-transparent.png" alt="SIMBA STUDIO" class="site-logo"></a>
 <nav class="navlinks"><a class="active" href="#home">Trang chủ</a><a href="#services">Dịch vụ</a><a href="#projects">Dự án</a><a href="#process">Quy trình</a><a href="#about">Về chúng tôi</a><a href="#contact">Liên hệ</a></nav>
 <a class="btn" href="#contact">↗ Yêu cầu báo giá</a>
 </div></header>
 <main id="home">
 <div class="container hero">
+<img class="cms-banner" id="cmsBanner" alt="Banner SIMBA STUDIO">
 <div class="hero-copy"><div class="eyebrow">DESIGN　×　FABRICATION　×　PROPS</div><h1>SIMBA<br><span>STUDIO</span></h1><div class="accent-line"></div><p>Thiết kế – Mô hình hoá – Sản xuất<br>Từ ý tưởng đến hiện thực.</p><div class="hero-actions"><a class="btn" href="#contact">↗ Yêu cầu báo giá</a><a class="btn secondary" href="#projects">▷ Xem dự án</a></div></div>
 <div class="hero-art"><div class="planet"></div><div class="orbital"></div><div class="hud top">SYSTEM STATUS<strong>● ONLINE / SIMBA-01</strong></div><div class="hud bottom">DESIGN & FABRICATION<strong>3D · COMPOSITE · EPS</strong></div><div class="mech"><div class="head"></div><div class="arm left"></div><div class="arm right"></div><div class="torso"></div><div class="leg left"></div><div class="leg right"></div><div class="foot left"></div><div class="foot right"></div></div></div>
 </div>
 <section class="container section" id="services"><h2 class="section-title">DỊCH VỤ CỦA CHÚNG TÔI</h2><div class="service-grid" id="serviceGrid"></div></section>
-
-<div class="service-modal" id="serviceModal" role="dialog" aria-modal="true" aria-labelledby="serviceModalTitle"><div class="service-modal-box"><button class="service-modal-close" id="serviceModalClose" aria-label="Đóng">✕</button><div class="eyebrow">SIMBA STUDIO / SERVICE DETAILS</div><h2 id="serviceModalTitle"></h2><p id="serviceModalDescription"></p><h3>Hạng mục thực hiện</h3><ul id="serviceModalItems"></ul><h3>Quy trình</h3><p id="serviceModalProcess"></p><a class="btn service-modal-cta" href="#contact" id="serviceModalContact">↗ Yêu cầu báo giá</a></div></div>
 <section class="container section" id="projects"><h2 class="section-title">DỰ ÁN NỔI BẬT</h2><div class="filters"><button class="filter active" data-filter="all">Tất cả</button><button class="filter" data-filter="robot">Robot & Sự kiện</button><button class="filter" data-filter="model">Mô hình trưng bày</button><button class="filter" data-filter="mascot">Mascot</button><button class="filter" data-filter="3d">Sản phẩm 3D</button><button class="filter" data-filter="decor">Nội thất & Decor</button></div>
 <div class="project-grid" id="projectGrid"></div>
 </section>
@@ -54,8 +107,9 @@ async function loadCmsContent(){
  try{
   const res=await fetch(new URL('content/site.json', document.baseURI)); if(!res.ok) throw new Error('Cannot load CMS content');
   const data=await res.json();
+   const hero=document.querySelector('.hero'); const banner=document.getElementById('cmsBanner'); if(hero && banner && data.banner){banner.src=data.banner;hero.classList.add('has-banner');}
   const services=document.getElementById('serviceGrid');
-  if(services && Array.isArray(data.services)) services.innerHTML=data.services.map(s=>`<div class="service" role="button" tabindex="0" onclick="showServiceDetails(${JSON.stringify(s.title||'')},${JSON.stringify(s.description||'')})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showServiceDetails(${JSON.stringify(s.title||'')},${JSON.stringify(s.description||'')})}"><div class="service-head"><div class="iconbox">${s.icon||'◇'}</div><h3>${s.title||''}</h3></div><p>${s.description||''}</p><p style="color:var(--teal);margin-top:10px;font-weight:700">Xem chi tiết ↗</p></div>`).join('');
+  if(services && Array.isArray(data.services)) services.innerHTML=data.services.map(s=>`<div class="service"><div class="service-head"><div class="iconbox">${s.icon||'◇'}</div><h3>${s.title||''}</h3></div><p>${s.description||''}</p></div>`).join('');
   const grid=document.getElementById('projectGrid');
   if(grid && Array.isArray(data.projects)){
    projectItems=data.projects;
@@ -64,18 +118,6 @@ async function loadCmsContent(){
   }
  }catch(err){console.warn('CMS content loading issue:',err);}
 }
-
-const serviceDetails={
-"Thiết kế & Dựng mô hình 3D":{description:"Phát triển ý tưởng thành concept và mô hình 3D trực quan trước khi chế tác. Phù hợp với sản phẩm, nhân vật, mô hình trưng bày và đạo cụ.",items:["Dựng concept từ mô tả, hình ảnh tham khảo hoặc bản vẽ","Model 3D, chỉnh sửa hình dáng và tỷ lệ","Render hình ảnh để duyệt thiết kế","Chuẩn bị file phục vụ in 3D, CNC hoặc sản xuất"],process:"Tiếp nhận yêu cầu → lên concept → dựng 3D → chỉnh sửa và duyệt → bàn giao file hoặc chuyển sang chế tác."},
-"Gia công Composite / in 3D":{description:"Gia công sản phẩm theo thiết kế bằng composite, fiberglass và công nghệ in 3D, hướng tới độ bền và bề mặt hoàn thiện phù hợp mục đích sử dụng.",items:["Tạo khuôn và sản phẩm composite / FRP","Gia công chi tiết, vỏ, tượng và đạo cụ","In 3D mẫu, chi tiết hoặc nguyên mẫu","Xử lý bề mặt, sơn và hoàn thiện"],process:"Chốt thiết kế → chọn vật liệu và phương pháp → làm mẫu/khuôn → gia công → xử lý bề mặt → nghiệm thu."},
-"Mô hình Foam EPS / Mút xốp 3D":{description:"Chế tác mô hình kích thước lớn từ foam EPS/mút xốp cho quảng cáo, sự kiện, trưng bày và trang trí không gian.",items:["Tượng, mascot và mô hình nhân vật","Chữ nổi, logo và mô hình sản phẩm","Backdrop, decor và đạo cụ sân khấu","Phủ bề mặt, sơn và hoàn thiện theo yêu cầu"],process:"Nhận kích thước và hình ảnh → dựng phương án → cắt/gọt foam → phủ và gia cố → sơn hoàn thiện → bàn giao."},
-"Robot & Đạo cụ sự kiện":{description:"Thiết kế, chế tác robot, mascot và đạo cụ phục vụ sự kiện, quảng cáo, sân khấu, cosplay và hoạt động thương hiệu.",items:["Robot trang trí hoặc robot biểu diễn theo concept","Mascot, nhân vật và đạo cụ cosplay","Đạo cụ sân khấu, activation và chụp hình","Tùy chỉnh kích thước, màu sắc và chi tiết"],process:"Trao đổi concept → thiết kế và duyệt mẫu → chế tác → thử lắp/kiểm tra → hoàn thiện và bàn giao."},
-"Sản phẩm sáng tạo & Tùy chỉnh":{description:"Phát triển sản phẩm độc bản và đồ decor theo yêu cầu cá nhân, thương hiệu hoặc không gian.",items:["Decor, tượng mini và quà tặng cá nhân hóa","Phụ kiện trưng bày và sản phẩm theo concept","Mẫu thử và chi tiết tùy chỉnh","Kết hợp 3D printing, foam, composite và vật liệu phù hợp"],process:"Nhận ý tưởng → đề xuất thiết kế/vật liệu → duyệt mẫu → sản xuất → hoàn thiện và giao hàng."}
-};
-function showServiceDetails(title,description){const d=serviceDetails[title]||{description:description||"SIMBA STUDIO tư vấn thiết kế và chế tác theo yêu cầu.",items:["Tư vấn theo ý tưởng, hình ảnh và kích thước"],process:"Tiếp nhận yêu cầu → tư vấn → báo giá → chế tác → bàn giao."};document.getElementById("serviceModalTitle").textContent=title;document.getElementById("serviceModalDescription").textContent=d.description;document.getElementById("serviceModalItems").innerHTML=d.items.map(x=>`<li>${x}</li>`).join("");document.getElementById("serviceModalProcess").textContent=d.process;document.getElementById("serviceModal").classList.add("open");document.body.style.overflow="hidden";}
-function closeServiceDetails(){document.getElementById("serviceModal").classList.remove("open");document.body.style.overflow="";}
-document.getElementById("serviceModalClose").addEventListener("click",closeServiceDetails);document.getElementById("serviceModal").addEventListener("click",e=>{if(e.target.id==="serviceModal")closeServiceDetails();});document.addEventListener("keydown",e=>{if(e.key==="Escape")closeServiceDetails();});
-
 loadCmsContent();
 document.getElementById('quote').addEventListener('submit',e=>{e.preventDefault();const n=document.getElementById('clientName').value,ph=document.getElementById('clientPhone').value,s=document.getElementById('clientService').value,m=document.getElementById('clientMsg').value;const text=`Xin chào SIMBA STUDIO, tôi muốn báo giá:\\nTên: ${n}\\nSĐT: ${ph}\\nDịch vụ: ${s}\\nMô tả: ${m}`;window.open('https://zalo.me/0386835763?text='+encodeURIComponent(text),'_blank')});
 </script></body></html>
