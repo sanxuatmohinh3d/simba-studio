@@ -41,3 +41,4 @@ collections:
               - {label: "Dòng chữ nhỏ", name: "label", widget: "string", required: false}
               - {label: "Biểu tượng nếu chưa có ảnh", name: "icon", widget: "string", required: false}
               - {label: "Ảnh dự án", name: "image", widget: "image", required: false}
+              - {label: "Mô tả chi tiết", name: "description", widget: "text", required: false}
