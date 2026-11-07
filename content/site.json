@@ -29,10 +29,10 @@
   "projects": [
     {
       "category": "robot",
-      "icon": "🤖",
+      "icon": "",
       "label": "ROBOT / PROP",
       "title": "Robot cơ khí tương lai",
-      "image": ""
+      "image": "assets/uploads/1793879362205_469505671597371809_6124561027539114459_c3755dc0f4f842d7f226a35ac1e0728a.jpg"
     },
     {
       "category": "model",
