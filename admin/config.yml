@@ -1,7 +1,6 @@
 backend:
-  name: github
-  repo: sanxuathomohinh3d/simba-studio
-  branch: main
+  name: turbo-github
+  turbo_site_id: 26834f32-a4b1-4179-af34-4dd7ea008737
 
 media_folder: "assets/uploads"
 public_folder: "assets/uploads"
