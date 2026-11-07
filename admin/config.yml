@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 backend:
   name: turbo-github
   turbo_site_id: 26834f32-a4b1-4179-af34-4dd7ea008737
@@ -51,7 +41,3 @@ collections:
               - {label: "Dòng chữ nhỏ", name: "label", widget: "string", required: false}
               - {label: "Biểu tượng nếu chưa có ảnh", name: "icon", widget: "string", required: false}
               - {label: "Ảnh dự án", name: "image", widget: "image", required: false}
-
-
-
-
