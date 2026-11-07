@@ -109,7 +109,8 @@ async function loadCmsContent(){
   const data=await res.json();
    const hero=document.querySelector('.hero'); const banner=document.getElementById('cmsBanner'); if(hero && banner && data.banner){banner.src=data.banner;hero.classList.add('has-banner');}
   const services=document.getElementById('serviceGrid');
-  if(services && Array.isArray(data.services)) services.innerHTML=data.services.map(s=>`<div class="service"><div class="service-head"><div class="iconbox">${s.icon||'◇'}</div><h3>${s.title||''}</h3></div><p>${s.description||''}</p></div>`).join('');
+    window.serviceData = data.services;
+if(services && Array.isArray(data.services)) services.innerHTML=data.services.map((s,i)=>`<div class="service" data-service-index="${i}" style="cursor:pointer"><div class="service-head"><div class="iconbox">${s.icon||'◇'}</div><h3>${s.title||''}</h3></div><p>${s.description||''}</p><small style="color:#0098d4;display:block;margin-top:10px">Xem chi tiết ↗</small></div>`).join('');
   const grid=document.getElementById('projectGrid');
   if(grid && Array.isArray(data.projects)){
    projectItems=data.projects;
@@ -118,6 +119,35 @@ async function loadCmsContent(){
   }
  }catch(err){console.warn('CMS content loading issue:',err);}
 }
-loadCmsContent();
+// POPUP CHI TIẾT DỊCH VỤ
+const serviceModal = document.createElement('div');
+serviceModal.id = 'serviceModal';
+serviceModal.style.cssText = 'display:none;position:fixed;inset:0;background:#000b;z-index:9999;align-items:center;justify-content:center;padding:20px;';
+serviceModal.innerHTML = `
+<div style="background:#071c2b;border:1px solid #0098d4;border-radius:15px;padding:30px;max-width:600px;width:100%;color:white;position:relative">
+<button id="closeServiceModal" style="position:absolute;right:15px;top:10px;background:none;border:0;color:#00bce8;font-size:28px;cursor:pointer">×</button>
+<h2 id="serviceModalTitle" style="color:#0098d4"></h2>
+<p id="serviceModalDescription" style="line-height:1.8;color:#d5e5ed"></p>
+<a href="#contact" class="btn" id="serviceModalQuote">Yêu cầu báo giá ↗</a>
+</div>`;
+document.body.appendChild(serviceModal);
+
+document.addEventListener('click', function(e) {
+  const card = e.target.closest('.service');
+  if(card) {
+    const index = Number(card.dataset.serviceIndex);
+    const service = window.serviceData?.[index];
+    if(service) {
+      document.getElementById('serviceModalTitle').textContent = service.title || '';
+      document.getElementById('serviceModalDescription').textContent = service.detail || service.description || '';
+      serviceModal.style.display = 'flex';
+    }
+  }
+});
+
+document.getElementById('closeServiceModal').onclick = () => serviceModal.style.display = 'none';
+serviceModal.onclick = e => {
+  if(e.target === serviceModal) serviceModal.style.display = 'none';
+};loadCmsContent();
 document.getElementById('quote').addEventListener('submit',e=>{e.preventDefault();const n=document.getElementById('clientName').value,ph=document.getElementById('clientPhone').value,s=document.getElementById('clientService').value,m=document.getElementById('clientMsg').value;const text=`Xin chào SIMBA STUDIO, tôi muốn báo giá:\\nTên: ${n}\\nSĐT: ${ph}\\nDịch vụ: ${s}\\nMô tả: ${m}`;window.open('https://zalo.me/0386835763?text='+encodeURIComponent(text),'_blank')});
 </script></body></html>
